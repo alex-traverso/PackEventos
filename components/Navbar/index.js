@@ -29,14 +29,14 @@ const NavBar = () => {
         >
           <Link
             activeClass='active'
-            className=' cursor-pointer'
+            className='cursor-pointer'
             to='home'
             spy={true}
             smooth={true}
             offset={-80}
             duration={500}
           >
-            <Image className='mr-1 pt-2' src={logo} alt='Logo' height={45} />
+            <Image src={logo} alt='Logo' height={50} />
           </Link>
         </div>
 
@@ -83,27 +83,63 @@ const NavBar = () => {
               </Link>
             </li>
           ))}
-          <div className=' md:hidden m:flex m:gap-5 fixed bottom-6 right-10'>
+          <div className='md:hidden m:flex m:gap-5 mt-10'>
             <div className='bg-primary rounded-full p-[6px]'>
-              <Instagram className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px] ' />
+              <a
+                target='_blank'
+                rel='noreferrer'
+                href='https://www.instagram.com/packeventos_/'
+              >
+                <Instagram className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px] ' />
+              </a>
             </div>
             <div className='bg-primary rounded-full p-[6px]'>
-              <Facebook className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px] ' />
+              <a
+                target='_blank'
+                rel='noreferrer'
+                href='https://www.facebook.com/profile.php?id=100063776641832'
+              >
+                <Facebook className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px] ' />
+              </a>
             </div>
             <div className='bg-primary rounded-full p-[6px]'>
-              <Whatsapp className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px] ' />
+              <a
+                target='_blank'
+                rel='noreferrer'
+                href='https://www.google.com.ar'
+              >
+                <Whatsapp className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px] ' />
+              </a>
             </div>
           </div>
         </ul>
-        <div className=' m:hidden md:flex md:gap-5'>
+        <div className='m:hidden md:flex md:gap-5'>
           <div className='bg-primary rounded-full p-[6px]'>
-            <Instagram className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px] ' />
+            <a
+              target='_blank'
+              rel='noreferrer'
+              href='https://www.instagram.com/packeventos_/'
+            >
+              <Instagram className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px] ' />
+            </a>
           </div>
           <div className='bg-primary rounded-full p-[6px]'>
-            <Facebook className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px] ' />
+            <a
+              target='_blank'
+              rel='noreferrer'
+              href='https://www.facebook.com/profile.php?id=100063776641832'
+            >
+              <Facebook className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px] ' />
+            </a>
           </div>
           <div className='bg-primary rounded-full p-[6px]'>
-            <Whatsapp className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px] ' />
+            <a
+              target='_blank'
+              rel='noreferrer'
+              href='https://www.google.com.ar'
+            >
+              <Whatsapp className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px] ' />
+            </a>
           </div>
         </div>
       </div>

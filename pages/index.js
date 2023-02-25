@@ -5,6 +5,7 @@ import { Roboto } from "next/font/google";
 import Banner from "@/components/Banner";
 import NavBar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SocialMedia from "@/components/SocialMedia";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function Home() {
         <div>
           <NavBar />
           <Banner />
+          <SocialMedia />
           <Footer />
         </div>
       </main>
