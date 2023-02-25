@@ -1,11 +1,15 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 
 //Componentes
 import Banner from "@/components/Banner";
 import NavBar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "500", "700", "900"],
+});
 
 export default function Home() {
   return (
@@ -16,11 +20,11 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <main>
+      <main className={roboto.className}>
         <div>
           <NavBar />
           <Banner />
-          <h1 className=' text-red-500'>Hello World</h1>
+          <Footer />
         </div>
       </main>
     </>

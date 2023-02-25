@@ -3,6 +3,9 @@ import { Link } from "react-scroll";
 //Iconos
 import Menu from "../Icons/Menu/index";
 import Close from "../Icons/Close/index";
+import Instagram from "../Icons/Instagram/index";
+import Facebook from "../Icons/Facebook/index";
+import Whatsapp from "../Icons/Whatsapp/index";
 //Imagen logo
 import Image from "next/image";
 import logo from "public/packeventosLogo.png";
@@ -58,14 +61,14 @@ const NavBar = () => {
           </div>
         </div>
         <ul
-          className={`font-medium m:flex m:flex-col m:items-end md:flex md:flex-row md:items-center md:pb-0 pb-12 absolute md:static m:bg-lightGrey md:bg-transparent md:z-auto z-[-1] right-0 w-[60%] m:h-screen md:h-auto md:w-auto md:pl-0 pr-10 last:pr-0 transition-all duration-500 ease-in ${
+          className={`font-medium m:flex m:flex-col m:items-end md:flex md:flex-row md:items-center md:pb-0 pb-12 m:absolute md:static m:bg-lightGrey md:bg-transparent md:z-auto z-[-1] right-0 w-[60%] m:h-screen md:h-auto md:w-auto md:pl-0 m:pr-10 lg:pr-0  transition-all duration-500 ease-in ${
             open ? "top-20 " : "top-[-1000px]"
           }`}
         >
           {Links.map((link) => (
             <li
               key={link.name}
-              className='m:mr-9 lg:text-xl md:text-lg w-max md:my-0 mt-8 tracking-wide cursor-pointer'
+              className='m:mr-0 md:mr-5 lg:last-of-type:mr-0 lg:text-xl md:text-lg w-max md:my-0 mt-8 tracking-wide cursor-pointer'
             >
               <Link
                 activeClass='active'
@@ -80,8 +83,29 @@ const NavBar = () => {
               </Link>
             </li>
           ))}
-          <div className=' m:mt-4 md:mt-0 m:mr-9 md:mr-0'></div>
+          <div className=' md:hidden m:flex m:gap-5 fixed bottom-6 right-10'>
+            <div className='bg-primary rounded-full p-[6px]'>
+              <Instagram className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px] ' />
+            </div>
+            <div className='bg-primary rounded-full p-[6px]'>
+              <Facebook className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px] ' />
+            </div>
+            <div className='bg-primary rounded-full p-[6px]'>
+              <Whatsapp className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px] ' />
+            </div>
+          </div>
         </ul>
+        <div className=' m:hidden md:flex md:gap-5'>
+          <div className='bg-primary rounded-full p-[6px]'>
+            <Instagram className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px] ' />
+          </div>
+          <div className='bg-primary rounded-full p-[6px]'>
+            <Facebook className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px] ' />
+          </div>
+          <div className='bg-primary rounded-full p-[6px]'>
+            <Whatsapp className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px] ' />
+          </div>
+        </div>
       </div>
     </div>
   );

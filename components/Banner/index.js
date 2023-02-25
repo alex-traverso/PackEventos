@@ -1,4 +1,3 @@
-import Button from "../Button";
 import { Link } from "react-scroll";
 import Image from "next/image";
 import banner from "public/banner.png";
@@ -11,13 +10,13 @@ export default function Banner() {
           <h1 className='text-white md:text-7xl  m:text-6xl text-left font-semibold mb-2'>
             PACK EVENTOS
           </h1>
-          <h3 className='text-lightBlue font-semibold lg:text-3xl md:text-2x1 m:text-xl mb-5 tracking-wide'>
+          <h3 className='text-white w-[35vw] font-medium lg:text-3xl md:text-2x1 m:text-xl mb-5 tracking-wide'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
           </h3>
 
           <Link
             activeClass='active'
-            className='w-max font-semibold lg:text-lg lg:px-6 lg:py-2 sm:px-5 sm:py-2 m:px-4 m:py-1 m:text-sm text-white border-2  border-lightBlue rounded-lg hover:bg-lightBlue transition-all tracking-widest cursor-pointer'
+            className='w-max font-semibold lg:text-lg lg:px-6 lg:py-2 sm:px-5 sm:py-2 m:px-4 m:py-1 m:text-sm text-white rounded-xl bg-primary hover:bg-primaryHover transition-all tracking-widest cursor-pointer'
             to='contact'
             spy={true}
             smooth={true}

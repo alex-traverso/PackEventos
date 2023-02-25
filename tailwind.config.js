@@ -13,7 +13,8 @@ module.exports = {
       colors: {
         darkGrey: "#171717",
         lightGrey: "#323232",
-        primary: "#FCBB3B",
+        primary: "#F2AD25",
+        primaryHover: "#DF941C",
       },
       padding: {
         sectionTop: "50px",
