@@ -6,6 +6,7 @@ import Banner from "@/components/Banner";
 import NavBar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SocialMedia from "@/components/SocialMedia";
+import Shipping from "@/components/Shipping";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -26,6 +27,7 @@ export default function Home() {
           <NavBar />
           <Banner />
           <SocialMedia />
+          <Shipping />
           <Footer />
         </div>
       </main>

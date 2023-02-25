@@ -17,8 +17,9 @@ module.exports = {
         primaryHover: "#DF941C",
       },
       padding: {
-        sectionTop: "50px",
-        sectionBottom: "75px",
+        topBottom: "70px",
+        sectionTop: "65px",
+        sectionBottom: "65px",
         sectionSides: "10rem",
         sectionSidesMobile: "2rem",
       },
