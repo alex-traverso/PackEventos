@@ -30,7 +30,7 @@ export default function SocialMedia() {
               className='stroke-white  hover:stroke-primary transition-all shadow-md'
               width={20}
               height={20}
-              stroke-width={2}
+              strokeWidth={2}
             />
           </a>
         </div>
