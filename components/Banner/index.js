@@ -27,7 +27,7 @@ export default function Banner() {
           </Link>
         </div>
 
-        <div className='absolute top-0 left-0 h-screen w-screen'>
+        <div className='absolute top-0 left-0 h-screen w-screen overflow-hidden'>
           <Image src={banner} className='h-full w-full object-cover'></Image>
         </div>
       </div>

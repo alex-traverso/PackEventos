@@ -7,6 +7,8 @@ import NavBar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SocialMedia from "@/components/SocialMedia";
 import Shipping from "@/components/Shipping";
+import ProductsHomeSection from "@/components/ProductsHomeSection";
+import Phrase from "@/components/Phrase";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -28,6 +30,9 @@ export default function Home() {
           <Banner />
           <SocialMedia />
           <Shipping />
+          <ProductsHomeSection />
+          <Phrase />
+
           <Footer />
         </div>
       </main>
