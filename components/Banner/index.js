@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import LeftArrow from "../Icons/LeftArrow/index";
 import RightArrow from "../Icons/RightArrow/index";
 import SlideIcon from "../Icons/SlideIcon/index";
+import { archivoBlack } from "@/pages";
 /* import Image from "next/image";
 import banner from "public/banner.png"; */
 
@@ -58,7 +59,9 @@ export default function Banner() {
             <RightArrow onClick={nextSlide} width={30} fill='#F2AD25' />
           </div>
           {/* Slides */}
-          <h1 className='text-white md:text-7xl  m:text-6xl text-left font-semibold mb-2'>
+          <h1
+            className={`${archivoBlack.className} text-white md:text-7xl  m:text-6xl text-left font-semibold mb-2`}
+          >
             PACK EVENTOS
           </h1>
           <h3 className='text-white w-[35vw] font-medium lg:text-3xl md:text-2x1 m:text-xl mb-5 tracking-wide'>

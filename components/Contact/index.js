@@ -51,22 +51,22 @@ export default function Contact() {
   return (
     <div
       id='contact'
-      className='flex flex-col justify-center items-center w-full bg-lightestBg dark:bg-darkGrey pb-sectionBottom pt-sectionTop '
+      className='flex flex-col justify-center items-center w-full bg-lightGrey py-topBottom m:px-sectionSidesMobile lg:px-sectionSides '
     >
       <Titles>CONTACTO</Titles>
       <section>
         {isOpen ? (
-          <section className='bg-dark/50 min-h-full w-full z-50 top-0 left-0 flex justify-center items-center fixed'>
-            <div className='bg-dark duration-400 text-dark dark:text-white relative flex md:min-h-[350px] w-[500px] cursor-pointer flex-col justify-center items-center gap-4 rounded-xl border border-lightGrey p-6 shadow-inner transition-all border-zinc-700/40 dark:shadow-zinc-700/40 '>
+          <section className='bg-black/50 min-h-full w-full z-50 top-0 left-0 flex justify-center items-center fixed '>
+            <div className='bg-darkGrey duration-400 text-white relative flex md:min-h-[350px] w-[500px] flex-col justify-center items-center gap-4 rounded-xl border border-lightGrey p-6 shadow-inner border-zinc-700/shadow-zinc-700/40 '>
               <h2 className='text-2xl'>El mensaje se envió con exito</h2>
-              <Check width={70} height={70} stroke='#4399CE' />
+              <Check width={70} height={70} className='stroke-primary' />
               {isOpen ? (
                 <Button
                   onClick={() => {
                     setIsOpen(false);
                   }}
                 >
-                  Cerrar
+                  CERRAR
                 </Button>
               ) : null}
             </div>
@@ -86,11 +86,11 @@ export default function Contact() {
         ref={form}
         onSubmit={handleSubmit}
         action=''
-        className=' flex flex-col justify-center items-start lg:w-[45%] sm:w-[60%] m:w-[80%] gap-3 text-black dark:text-white'
+        className=' flex flex-col justify-center items-start lg:w-[45%] sm:w-[60%] m:w-[80%] gap-3 text-white'
       >
         <input
           required
-          className=' bg-lightDarkBg dark:bg-lightestGrey lg:p-3 m:px-3 m:py-2 w-full rounded-xl'
+          className=' bg-darkGrey lg:p-3 m:px-3 m:py-2 w-full rounded-xl'
           type='text'
           value={name}
           name='name'
@@ -107,7 +107,7 @@ export default function Contact() {
 
         <input
           required
-          className=' bg-lightDarkBg dark:bg-lightestGrey lg:p-3 m:px-3 m:py-2 w-full rounded-xl'
+          className=' bg-darkGrey lg:p-3 m:px-3 m:py-2 w-full rounded-xl'
           type='text'
           value={email}
           name='email'
@@ -124,7 +124,7 @@ export default function Contact() {
 
         <textarea
           required
-          className='bg-lightDarkBg dark:bg-lightestGrey lg:p-3 m:px-3 m:py-2 w-full resize-none h-36 rounded-xl'
+          className='bg-darkGrey lg:p-3 m:px-3 m:py-2 w-full resize-none h-36 rounded-xl'
           value={message}
           name='message'
           type='textarea'

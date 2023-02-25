@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll";
+/* import { Link } from "react-scroll"; */
+
+import Link from "next/link";
 //Iconos
 import Menu from "../Icons/Menu/index";
 import Close from "../Icons/Close/index";
@@ -14,7 +16,7 @@ const NavBar = () => {
   let Links = [
     { name: "Productos", link: "products" },
     { name: "Servicios", link: "services" },
-    { name: "Nosotros", link: "us" },
+    { name: "Nosotros", link: "aboutUs" },
     { name: "Contacto", link: "contact" },
   ];
 
@@ -30,7 +32,7 @@ const NavBar = () => {
           <Link
             activeClass='active'
             className='cursor-pointer'
-            to='home'
+            href='/'
             spy={true}
             smooth={true}
             offset={-80}
@@ -76,7 +78,7 @@ const NavBar = () => {
                 smooth={true}
                 offset={-80}
                 duration={500}
-                to={link.link}
+                href={link.link}
                 className='text-white hover:text-primary duration-500'
               >
                 {link.name}

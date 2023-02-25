@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Roboto } from "next/font/google";
+import { Roboto, Archivo_Black } from "next/font/google";
 
 //Componentes
 import Banner from "@/components/Banner";
@@ -9,12 +9,18 @@ import SocialMedia from "@/components/SocialMedia";
 import Shipping from "@/components/Shipping";
 import ProductsHomeSection from "@/components/ProductsHomeSection";
 import Phrase from "@/components/Phrase";
+import Brands from "@/components/Brands";
+import Contact from "@/components/Contact";
 
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["100", "300", "400", "500", "700", "900"],
 });
 
+export const archivoBlack = Archivo_Black({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 export default function Home() {
   return (
     <>
@@ -32,7 +38,8 @@ export default function Home() {
           <Shipping />
           <ProductsHomeSection />
           <Phrase />
-
+          <Brands />
+          <Contact />
           <Footer />
         </div>
       </main>
