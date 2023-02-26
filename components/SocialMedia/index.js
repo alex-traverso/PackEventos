@@ -7,20 +7,20 @@ export default function SocialMedia() {
   return (
     <>
       <div className='flex flex-col justify-end items-center fixed bottom-0 z-50 lg:left-12 m:left-4 sm:left-8 gap-6 lg:h-2/6 md:h-1/4 m:h-1/5'>
-        <div className='bg-darkGrey/60 rounded-full p-[6px]'>
+        <div className='bg-darkGrey/60 rounded-full p-[6px] cursor-pointer'>
           <a
             target='_blank'
             rel='noreferrer'
             href='https://www.instagram.com/packeventos_/'
           >
             <Instagram
-              className='fill-white  hover:fill-primary transition-all shadow-md'
+              className='fill-white hover:fill-primary transition-all shadow-md'
               width={20}
               height={20}
             />
           </a>
         </div>
-        <div className='bg-darkGrey/60 rounded-full p-[6px]'>
+        <div className='bg-darkGrey/60 rounded-full p-[6px] cursor-pointer'>
           <a
             target='_blank'
             rel='noreferrer'
@@ -35,7 +35,7 @@ export default function SocialMedia() {
           </a>
         </div>
 
-        <div className='bg-darkGrey/60 rounded-full p-[6px]'>
+        <div className='bg-darkGrey/60 rounded-full p-[6px] cursor-pointer'>
           <a target='_blank' rel='noreferrer' href='https://www.google.com.ar'>
             <Whatsapp
               className='fill-white  hover:fill-primary transition-all shadow-md'

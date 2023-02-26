@@ -4,6 +4,7 @@ import LeftArrow from "../Icons/LeftArrow/index";
 import RightArrow from "../Icons/RightArrow/index";
 import SlideIcon from "../Icons/SlideIcon/index";
 import { archivoBlack } from "@/pages";
+import Button from "../Button";
 /* import Image from "next/image";
 import banner from "public/banner.png"; */
 
@@ -65,7 +66,7 @@ export default function Banner() {
 
           <Link
             activeClass='active'
-            className='w-max font-semibold lg:text-lg lg:px-6 lg:py-2 sm:px-5 sm:py-2 m:px-4 m:py-1 m:text-sm text-white rounded-xl bg-primary hover:bg-primaryHover transition-all tracking-widest cursor-pointer'
+            className='cursor-pointer w-max font-semibold lg:text-lg lg:px-6 lg:py-2 sm:px-5 sm:py-2 m:px-4 m:py-1 m:text-sm text-white bg-primary hover:bg-primaryHover border-lightBlue rounded-lg  transition-all tracking-widest'
             to='contact'
             spy={true}
             smooth={true}
@@ -96,27 +97,4 @@ export default function Banner() {
       </div>
     </>
   );
-}
-
-{
-  /* <div className='absolute z-10 flex flex-col justify-center items-start bg-black lg:px-sectionSides m:px-sectionSidesMobile w-full h-full bg-opacity-[0.3]'>
-  <h1 className='text-white md:text-7xl  m:text-6xl text-left font-semibold mb-2'>
-    PACK EVENTOS
-  </h1>
-  <h3 className='text-white w-[35vw] font-medium lg:text-3xl md:text-2x1 m:text-xl mb-5 tracking-wide'>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  </h3>
-
-  <Link
-    activeClass='active'
-    className='w-max font-semibold lg:text-lg lg:px-6 lg:py-2 sm:px-5 sm:py-2 m:px-4 m:py-1 m:text-sm text-white rounded-xl bg-primary hover:bg-primaryHover transition-all tracking-widest cursor-pointer'
-    to='contact'
-    spy={true}
-    smooth={true}
-    offset={-80}
-    duration={500}
-  >
-    CONTACTO
-  </Link>
-</div>; */
 }

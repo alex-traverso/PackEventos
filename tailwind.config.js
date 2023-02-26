@@ -18,8 +18,6 @@ module.exports = {
       },
       padding: {
         topBottom: "70px",
-        /* sectionTop: "65px",
-        sectionBottom: "65px", */
         sectionSides: "8rem",
         sectionSidesMobile: "2rem",
       },
