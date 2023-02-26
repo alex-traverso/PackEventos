@@ -10,6 +10,7 @@ import Shipping from "@/components/Shipping";
 import ProductsHomeSection from "@/components/ProductsHomeSection";
 import Phrase from "@/components/Phrase";
 import Brands from "@/components/Brands";
+import ServicesComp from "@/components/ServicesComp";
 import Contact from "@/components/Contact";
 
 const roboto = Roboto({
@@ -39,6 +40,7 @@ export default function Home() {
           <ProductsHomeSection />
           <Phrase />
           <Brands />
+          <ServicesComp />
           <Contact />
           <Footer />
         </div>

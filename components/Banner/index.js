@@ -46,17 +46,12 @@ export default function Banner() {
           className='absolute z-10 flex flex-col justify-center items-start duration-500 bg-cover bg-center lg:px-sectionSides m:px-sectionSidesMobile w-full h-full bg-opacity-[0.3]'
         >
           {/* Left Arrow */}
-          <div className='p-1 bg-black/50 rounded-full absolute top-[50%] -translate-x-0 translate-y-[-50%] left-12 cursor-pointer'>
-            <LeftArrow
-              onClick={prevSlide}
-              className='rotate-180'
-              width={30}
-              fill='#F2AD25'
-            />
+          <div className=' flex justify-center p-2 h-12 w-12 bg-black/50 hover:bg-black transition-all rounded-full absolute top-[50%] -translate-x-0 translate-y-[-50%] left-12 cursor-pointer'>
+            <LeftArrow onClick={prevSlide} width='20px' fill='#F2AD25' />
           </div>
           {/* Right Arrow */}
-          <div className='p-1 bg-black/50 rounded-full absolute top-[50%] -translate-x-0 translate-y-[-50%] right-12 cursor-pointer'>
-            <RightArrow onClick={nextSlide} width={30} fill='#F2AD25' />
+          <div className=' flex justify-center p-2 h-12 w-12 bg-black/50 hover:bg-black transition-all rounded-full absolute top-[50%] -translate-x-0 translate-y-[-50%] right-12 cursor-pointer'>
+            <RightArrow onClick={nextSlide} width='20px' fill='#F2AD25' />
           </div>
           {/* Slides */}
           <h1

@@ -20,7 +20,7 @@ module.exports = {
         topBottom: "70px",
         /* sectionTop: "65px",
         sectionBottom: "65px", */
-        sectionSides: "10rem",
+        sectionSides: "8rem",
         sectionSidesMobile: "2rem",
       },
       screens: {
