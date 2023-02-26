@@ -1,5 +1,10 @@
 import Contact from "@/components/Contact";
+import Layout from "@/components/Layout";
 
 export default function ContactPage() {
-  return <Contact />;
+  return (
+    <Layout>
+      <Contact />
+    </Layout>
+  );
 }

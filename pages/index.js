@@ -12,6 +12,7 @@ import Phrase from "@/components/Phrase";
 import Brands from "@/components/Brands";
 import ServicesComp from "@/components/ServicesComp";
 import Contact from "@/components/Contact";
+import Layout from "@/components/Layout";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -33,16 +34,16 @@ export default function Home() {
       </Head>
       <main className={roboto.className}>
         <div>
-          <NavBar />
-          <Banner />
-          <SocialMedia />
-          <Shipping />
-          <ProductsHomeSection />
-          <Phrase />
-          <Brands />
-          <ServicesComp />
-          <Contact />
-          <Footer />
+          <Layout>
+            <Banner />
+            <SocialMedia />
+            <Shipping />
+            <ProductsHomeSection />
+            <Phrase />
+            <Brands />
+            <ServicesComp />
+            <Contact />
+          </Layout>
         </div>
       </main>
     </>

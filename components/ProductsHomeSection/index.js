@@ -48,17 +48,16 @@ export default function ProductsHomeSection() {
 
   return (
     <>
-      <div className='lg:px-sectionSides py-topBottom m:px-sectionSidesMobile bg-darkGrey md:flex md:justify-center h-auto md:items-center md:self-center md:flex-col m:flex m:justify-center m:items-center m:flex-col'>
+      <div className='w-full lg:px-sectionSides py-topBottom m:px-sectionSidesMobile bg-darkGrey md:flex md:justify-center h-auto md:items-center md:self-center md:flex-col m:flex m:justify-center m:items-center m:flex-col'>
         <Titles>PRODUCTOS</Titles>
-
-        <div className='flex m:flex-wrap lg:flex-nowrap m:max-w-xs md:max-w-2xl lg:max-w-full bg-slate-400 justify-center items-center gap-5 cursor-pointer'>
+        <div className='flex m:flex-wrap lg:flex-nowrap m:max-w-xs md:max-w-2xl lg:max-w-full justify-center items-center gap-5 cursor-pointer'>
           {source.map((image, id) => (
             <>
               <Link href={source[id].url}>
                 <ImageToComps
                   key={id}
                   src={image.name}
-                  className='m:h-[60px] w-auto xs:h-[70px] object-contain'
+                  className=' duration-500 hover:scale-[1.05] m:h-[60px] w-auto xs:h-[70px] object-contain'
                 />
               </Link>
             </>

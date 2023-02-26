@@ -41,7 +41,7 @@ export default function Banner() {
 
   return (
     <>
-      <div className='relative w-full h-[calc(100vh_-_5rem)] mt-20 flex flex-col items-center justify-start overflow-hidden'>
+      <div className='relative w-full h-[calc(100vh_-_5rem)] flex flex-col items-center justify-start overflow-hidden'>
         <div
           style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
           className='absolute z-10 flex flex-col justify-center items-start duration-500 bg-cover bg-center lg:px-sectionSides m:px-sectionSidesMobile w-full h-full bg-opacity-[0.3]'

@@ -3,7 +3,7 @@ import Titles from "../Titles";
 export default function Shipping() {
   return (
     <>
-      <div className='lg:px-sectionSides m:px-sectionSidesMobile py-topBottom bg-lightGrey md:flex md:justify-center h-auto md:items-center md:self-center md:flex-col m:flex m:justify-center m:items-center m:flex-col'>
+      <div className='w-full lg:px-sectionSides m:px-sectionSidesMobile py-topBottom bg-lightGrey md:flex md:justify-center h-auto md:items-center md:self-center md:flex-col m:flex m:justify-center m:items-center m:flex-col'>
         <Titles>ENVÍOS</Titles>
 
         <div className='text-white w-auto xl:w-[600px] md:w-[400px] xs:w-[350px] m:w-[300px]'>
