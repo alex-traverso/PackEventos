@@ -9,40 +9,40 @@ import hotDog from "public/productsHome/hot dog.png";
 export default function ProductsHomeSection() {
   const source = [
     {
-      name: dressing,
-      url: "/",
-    },
-    {
       name: burger,
-      url: "aboutUs",
+      url: "/productos/hamburguesas",
     },
     {
       name: hotDog,
-      url: "aboutUs",
+      url: "/productos/panchos",
     },
     {
       name: dressing,
-      url: "/",
+      url: "/productos/aderezos",
     },
     {
       name: burger,
-      url: "aboutUs",
+      url: "/productos/hamburguesas",
     },
     {
       name: hotDog,
-      url: "aboutUs",
+      url: "/productos/panchos",
     },
     {
       name: dressing,
-      url: "/",
+      url: "/productos/aderezos",
     },
     {
       name: burger,
-      url: "aboutUs",
+      url: "/productos/hamburguesas",
     },
     {
       name: hotDog,
-      url: "aboutUs",
+      url: "/productos/panchos",
+    },
+    {
+      name: dressing,
+      url: "/productos/aderezos",
     },
   ];
 

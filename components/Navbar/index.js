@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 /* import { Link } from "react-scroll"; */
-
 import Link from "next/link";
 //Iconos
 import Menu from "../Icons/Menu/index";
@@ -14,10 +13,10 @@ import logo from "public/packeventosLogo.png";
 
 const NavBar = () => {
   let Links = [
-    { name: "Productos", link: "products" },
-    { name: "Servicios", link: "services" },
-    { name: "Nosotros", link: "aboutUs" },
-    { name: "Contacto", link: "contact" },
+    { name: "Productos", link: "/productos" },
+    { name: "Servicios", link: "/servicios" },
+    { name: "Nosotros", link: "/nosotros" },
+    { name: "Contacto", link: "/contacto" },
   ];
 
   const [open, setOpen] = useState(false);
@@ -29,15 +28,7 @@ const NavBar = () => {
           className='text-2xl cursor-pointer flex items-center 
       text-gray-800'
         >
-          <Link
-            activeClass='active'
-            className='cursor-pointer'
-            href='/'
-            spy={true}
-            smooth={true}
-            offset={-80}
-            duration={500}
-          >
+          <Link activeClass='active' className='cursor-pointer' href='/'>
             <Image src={logo} alt='Logo' height={50} />
           </Link>
         </div>
@@ -74,10 +65,6 @@ const NavBar = () => {
             >
               <Link
                 activeClass='active'
-                spy={true}
-                smooth={true}
-                offset={-80}
-                duration={500}
                 href={link.link}
                 className='text-white hover:text-primary duration-500'
               >
