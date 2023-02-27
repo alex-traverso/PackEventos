@@ -49,10 +49,7 @@ export default function Contact() {
 
   //AGREGAR UN MODAL O ALGO QUE LE INDIQUE AL USUARIO QUE SE ENVIO EL MENSAJE
   return (
-    <div
-      id='contact'
-      className='flex flex-col justify-center items-center w-full bg-lightGrey py-topBottom m:px-sectionSidesMobile lg:px-sectionSides '
-    >
+    <div className='flex flex-col justify-center items-center w-full bg-lightGrey py-topBottom m:px-sectionSidesMobile lg:px-sectionSides '>
       <Titles>CONTACTO</Titles>
       <section>
         {isOpen ? (

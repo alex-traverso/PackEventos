@@ -13,21 +13,23 @@ export default function Product({
 }) {
   return (
     <>
-      <div className='m:max-w-[250px] md:max-w-xs rounded-md overflow-hidden shadow-lg hover:scale-[1.02] transition duration-500 cursor-pointer'>
+      <div className='m:w-[250px] min-h-[300px] md:w-xs rounded-md overflow-hidden shadow-lg hover:scale-[1.02] transition duration-500 cursor-pointer bg-darkGrey'>
         <Link href={href}>
-          <div className='flex justify-center items-start bg-slate-500'>
+          <div className='flex justify-center items-start'>
             <Image
               src={src}
               alt={alt}
-              className=' h-[100px] w-auto object-contain m-5'
+              className='h-[100px] w-auto object-contain m-5'
               width={width}
               height={height}
             />
           </div>
-          <div className='py-4 px-4 bg-white'>
-            <h3 className='text-lg font-semibold text-gray-600'>{title}</h3>
-            <p>{description}</p>
-            <p className='mt-4 text-lg font-thin'>{price}</p>
+          <div className='py-4 px-4 '>
+            <h3 className='text-lg font-semibold text-primary'>{title}</h3>
+            <p className='text-white font-semibold'>{description}</p>
+            <div className='px-4 py-1 mt-4 rounded-lg bg-green-700 w-max'>
+              <p className=' text-lg font-medium text-white'>{price}</p>
+            </div>
           </div>
         </Link>
       </div>
