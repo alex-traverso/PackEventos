@@ -33,6 +33,7 @@ export default function ProductsPage() {
             <ProductNoPrice
               key={id}
               src={product.src}
+              brandsrc={product.brandsrc}
               title={product.title}
               description={product.description}
               price={product.price}

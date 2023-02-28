@@ -3,11 +3,13 @@ import Link from "next/link";
 
 export default function Product({
   src,
+  brandsrc,
   alt,
   width,
   height,
   title,
   description,
+  brand,
   price,
   href,
 }) {
@@ -23,10 +25,18 @@ export default function Product({
               width={width}
               height={height}
             />
+            <Image
+              src={brandsrc}
+              alt={brand}
+              className='w-[70px] bg-white object-contain my-5'
+              width={width}
+              height={height}
+            />
           </div>
           <div className='py-4 px-4 '>
             <h3 className='text-lg font-semibold text-primary'>{title}</h3>
-            <p className='text-white font-semibold'>{description}</p>
+            <p className='text-white'>{description}</p>
+            <p className='text-white font-semibold'>{brand}</p>
             <div className='px-4 py-1 mt-4 rounded-lg bg-green-700 w-max'>
               <p className=' text-lg font-medium text-white'>{price}</p>
             </div>
@@ -35,16 +45,4 @@ export default function Product({
       </div>
     </>
   );
-}
-{
-  /* <div className='w-[200px] h-[250px] hover:bg-darkGrey transition-all'>
-  <Image src={src} alt={alt} width={width} height={height}></Image>
-  <div>
-    <h2>{title}</h2>
-    <p>{description}</p>
-  </div>
-  <div className="">
-    <p>{price}</p>
-  </div>
-</div> */
 }
