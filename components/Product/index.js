@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Product({
   src,
@@ -8,7 +7,6 @@ export default function Product({
   height,
   title,
   description,
-  brand,
   price,
 }) {
   return (
@@ -26,7 +24,7 @@ export default function Product({
         <div className='py-4 px-4 '>
           <h3 className='text-lg font-semibold text-primary'>{title}</h3>
           <p className='text-white'>{description}</p>
-          <p className='text-white font-semibold'>{brand}</p>
+
           <div className='px-4 py-1 mt-4 rounded-lg bg-green-700 w-max'>
             <p className=' text-lg font-medium text-white'>{price}</p>
           </div>

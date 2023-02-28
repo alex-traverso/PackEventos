@@ -9,7 +9,7 @@ export default function Dressing() {
         <Titles>ADEREZOS X 500CC</Titles>
         <div className='flex flex-wrap gap-4 justify-center items-center w-full h-auto'>
           <Product
-            src='/products/mayonesa.png'
+            src='/products/aderezos/mayonesa.png'
             alt='Mayonesa'
             title='Mayonesa'
             description='BENIDORM'
@@ -19,7 +19,7 @@ export default function Dressing() {
             href=''
           />
           <Product
-            src='/products/mostaza.png'
+            src='/products/aderezos/mostaza.png'
             alt='Mostaza'
             title='Mostaza'
             description='BENIDORM'
@@ -29,7 +29,7 @@ export default function Dressing() {
             href=''
           />
           <Product
-            src='/products/ketchup.png'
+            src='/products/aderezos/ketchup.png'
             alt='Salsa Golf'
             title='Salsa Golf'
             description='BENIDORM'
@@ -39,7 +39,7 @@ export default function Dressing() {
             href=''
           />
           <Product
-            src='/products/salsa-golf.png'
+            src='/products/aderezos/salsa-golf.png'
             alt='Ketchup'
             title='Ketchup'
             description='BENIDORM'
@@ -49,7 +49,7 @@ export default function Dressing() {
             href=''
           />
           <Product
-            src='/products/mayonesa-aceitunas.png'
+            src='/products/aderezos/mayonesa-aceitunas.png'
             alt='Mayonesa con aceituna'
             title='Mayonesa con aceituna'
             description='BENIDORM'
@@ -59,7 +59,7 @@ export default function Dressing() {
             href=''
           />
           <Product
-            src='/products/queso-cheddar.png'
+            src='/products/aderezos/queso-cheddar.png'
             alt='Queso cheddar'
             title='Queso cheddar'
             description='BENIDORM'
@@ -69,7 +69,7 @@ export default function Dressing() {
             href=''
           />
           <Product
-            src='/products/queso-parmesano.png'
+            src='/products/aderezos/queso-parmesano.png'
             alt='Queso parmesano'
             title='Queso parmesano'
             description='BENIDORM'
@@ -79,7 +79,7 @@ export default function Dressing() {
             href=''
           />
           <Product
-            src='/products/barbacoa.png'
+            src='/products/aderezos/barbacoa.png'
             alt='Barbacoa'
             title='Barbacoa'
             description='BENIDORM'
@@ -89,7 +89,7 @@ export default function Dressing() {
             href=''
           />
           <Product
-            src='/products/picante.png'
+            src='/products/aderezos/picante.png'
             alt='Picante'
             title='Picante'
             description='BENIDORM'
@@ -99,7 +99,7 @@ export default function Dressing() {
             href=''
           />
           <Product
-            src='/products/chimichurri.png'
+            src='/products/aderezos/chimichurri.png'
             alt='Chimichurri'
             title='Chimichurri'
             description='BENIDORM'
@@ -114,7 +114,7 @@ export default function Dressing() {
           </div>
           {/* ADEREZOS SACHET */}
           <Product
-            src='/products/mayonesa-sachet.png'
+            src='/products/aderezos/mayonesa-sachet.png'
             alt='Sachet Mayonesa'
             title='Sachet Mayonesa'
             description='BENIDORM'
@@ -124,7 +124,7 @@ export default function Dressing() {
             href=''
           />
           <Product
-            src='/products/mostaza-sachet.png'
+            src='/products/aderezos/mostaza-sachet.png'
             alt='Sachet Mostaza'
             title='Sachet Mostaza'
             description='BENIDORM'
@@ -134,7 +134,7 @@ export default function Dressing() {
             href=''
           />
           <Product
-            src='/products/salsa-golf-sachet.png'
+            src='/products/aderezos/salsa-golf-sachet.png'
             alt='Sachet Salsa Golf'
             title='Sachet Salsa Golf'
             description='BENIDORM'
@@ -144,7 +144,7 @@ export default function Dressing() {
             href=''
           />
           <Product
-            src='/products/ketchup-sachet.png'
+            src='/products/aderezos/ketchup-sachet.png'
             alt='Sachet Ketchup'
             title='Sachet Ketchup'
             description='BENIDORM'
