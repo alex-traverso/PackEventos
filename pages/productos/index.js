@@ -19,6 +19,21 @@ export default function ProductsPage() {
       src: "/productsHome/dressing.png",
       href: "/productos/aderezos",
     },
+    {
+      title: "Quesos",
+      src: "/productsHome/queso.png",
+      href: "/productos/quesos",
+    },
+    {
+      title: "Rebozados",
+      src: "/productsHome/nuggets.png",
+      href: "/productos/quesos",
+    },
+    {
+      title: "Papas congeladas",
+      src: "/productsHome/papas-congeladas.png",
+      href: "/productos/quesos",
+    },
   ];
 
   return (

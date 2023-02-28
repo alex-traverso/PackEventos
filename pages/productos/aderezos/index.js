@@ -7,7 +7,7 @@ export default function Dressing() {
     <Layout>
       <div className='bg-lightGrey py-topBottom m:px-sectionSidesMobile lg:px-sectionSides'>
         <Titles>ADEREZOS X 500CC</Titles>
-        <div className='flex flex-wrap gap-4 justify-start items-center w-full h-auto'>
+        <div className='flex flex-wrap gap-4 justify-center items-center w-full h-auto'>
           <Product
             src='/products/mayonesa.png'
             alt='Mayonesa'
@@ -124,7 +124,7 @@ export default function Dressing() {
             href=''
           />
           <Product
-            src='/products/salsa-golf.png'
+            src='/products/mostaza-sachet.png'
             alt='Sachet Mostaza'
             title='Sachet Mostaza'
             description='BENIDORM'
