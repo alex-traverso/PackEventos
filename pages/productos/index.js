@@ -5,9 +5,14 @@ import ProductNoPrice from "@/components/ProductNoPrice";
 export default function ProductsPage() {
   const products = [
     {
-      title: "Hamburguesas",
+      title: "Hamburguesas Gigantes",
       src: "/productsHome/burger.png",
-      href: "/productos/hamburguesas",
+      href: "/productos/hamburguesas-gigantes",
+    },
+    {
+      title: "Hamburguesas clásicas",
+      src: "/productsHome/burger.png",
+      href: "/productos/hamburguesas-clasicas",
     },
     {
       title: "Panchos",

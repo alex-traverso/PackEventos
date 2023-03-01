@@ -24,7 +24,10 @@ export default function ServicesComp() {
   ];
 
   return (
-    <div className='py-topBottom m:px-sectionSidesMobile lg:px-sectionSides bg-darkGrey'>
+    <div
+      id='servicios'
+      className='py-topBottom m:px-sectionSidesMobile lg:px-sectionSides bg-darkGrey'
+    >
       <Titles>SERVICIOS</Titles>
       <div
         className='md:flex md:flex-row md:gap-4 md:justify-center md:items-center

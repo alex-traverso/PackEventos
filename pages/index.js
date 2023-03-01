@@ -3,8 +3,6 @@ import { Roboto, Archivo_Black } from "next/font/google";
 
 //Componentes
 import Banner from "@/components/Banner";
-import NavBar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import SocialMedia from "@/components/SocialMedia";
 import Shipping from "@/components/Shipping";
 import ProductsHomeSection from "@/components/ProductsHomeSection";
@@ -36,13 +34,12 @@ export default function Home() {
         <div>
           <Layout>
             <Banner />
-            <SocialMedia />
             <Shipping />
             <ProductsHomeSection />
             <Phrase />
             <Brands />
             <ServicesComp />
-            <Contact />
+            <Contact id='contacto' />
           </Layout>
         </div>
       </main>

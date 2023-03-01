@@ -6,7 +6,7 @@ import Button from "../Button";
 import emailjs from "@emailjs/browser";
 import Check from "../Icons/Check/index";
 
-export default function Contact() {
+export default function Contact({ id }) {
   const INITIAL_STATE = {
     name: "",
     email: "",
@@ -49,7 +49,10 @@ export default function Contact() {
 
   //AGREGAR UN MODAL O ALGO QUE LE INDIQUE AL USUARIO QUE SE ENVIO EL MENSAJE
   return (
-    <div className='flex flex-col justify-center items-center w-full bg-lightGrey py-topBottom m:px-sectionSidesMobile lg:px-sectionSides '>
+    <div
+      id={id}
+      className='flex flex-col justify-center items-center w-full bg-lightGrey py-topBottom m:px-sectionSidesMobile lg:px-sectionSides '
+    >
       <Titles>CONTACTO</Titles>
       <section>
         {isOpen ? (
