@@ -17,7 +17,7 @@ const AboutUs = () => {
           <Titles>NOSOTROS</Titles>
           <div className='flex justify-center'>
             <p className='text-white lg:w-[45vw] md:w-[50vw]  mm:w-[60vw]'>
-              Bienvenido a Pack Eventos, una empresa familiar dedicada a la
+              Bienvenido a Pack Eventos, una Pyme familiar dedicada a la
               distribución de panchos y hamburguesas congelados para el sector
               gastronómico. Desde hace varios años, hemos estado proporcionando
               productos de alta calidad a eventos, kioscos, colegios, clubes,
