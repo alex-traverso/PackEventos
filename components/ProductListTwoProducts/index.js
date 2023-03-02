@@ -24,9 +24,9 @@ export default function ProductListTwoProducts({
               key={id}
               src={brand.src}
               alt={brand.alt}
-              width='100'
-              height='100'
-              className='object-contain'
+              width={100}
+              height={100}
+              className='object-contain w-auto h-auto'
             ></Image>
           ))}
         </div>

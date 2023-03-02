@@ -53,24 +53,26 @@ export default function ProductsPage() {
       <Layout>
         <div
           id='productos'
-          className='bg-lightGrey py-topBottom m:px-sectionSidesMobile lg:px-sectionSides'
+          className='bg-lightGrey  py-topBottom m:px-sectionSidesMobile lg:px-sectionSides'
         >
           <Titles>PRODUCTOS</Titles>
-          <div className='w-full flex flex-wrap gap-8 justify-center items-center'>
-            {products.map((product, id) => (
-              <ProductNoPrice
-                key={id}
-                src={product.src}
-                brandsrc={product.brandsrc}
-                title={product.title}
-                description={product.description}
-                price={product.price}
-                href={product.href}
-                width={100}
-                height={100}
-                className='object-contain'
-              />
-            ))}
+          <div className='flex justify-center items-center w-full h-full'>
+            <div className='w-[80%] h-full flex flex-wrap gap-8 justify-center items-center'>
+              {products.map((product, id) => (
+                <ProductNoPrice
+                  key={id}
+                  src={product.src}
+                  title={product.title}
+                  brandsrc={product.brandsrc}
+                  description={product.description}
+                  price={product.price}
+                  href={product.href}
+                  width={100}
+                  height={100}
+                  className='object-contain'
+                />
+              ))}
+            </div>
           </div>
         </div>
       </Layout>

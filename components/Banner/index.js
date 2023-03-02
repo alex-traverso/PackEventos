@@ -1,12 +1,9 @@
 import { useState } from "react";
-import { Link } from "react-scroll";
+import Link from "next/link";
 import LeftArrow from "../Icons/LeftArrow/index";
 import RightArrow from "../Icons/RightArrow/index";
 import SlideIcon from "../Icons/SlideIcon/index";
 import { archivoBlack } from "@/pages";
-import Button from "../Button";
-/* import Image from "next/image";
-import banner from "public/banner.png"; */
 
 export default function Banner() {
   const slides = [
@@ -48,7 +45,7 @@ export default function Banner() {
 
   return (
     <>
-      <div className='relative w-full h-[calc(100vh_-_5rem)] flex flex-col items-center justify-start overflow-hidden'>
+      <div className='relative w-full h-[calc(100vh-5rem)] flex flex-col items-center justify-start overflow-hidden'>
         <div
           style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
           className='absolute z-10 flex flex-col justify-center items-start duration-500 bg-cover bg-center lg:px-sectionSides m:px-sectionSidesMobile w-full h-full bg-opacity-[0.3]'
@@ -63,27 +60,24 @@ export default function Banner() {
           </div>
           {/* Slides */}
           <h1
-            className={`${archivoBlack.className} text-white md:text-7xl  m:text-6xl text-left font-semibold mb-2`}
+            className={`${archivoBlack.className} text-white md:text-7xl drop-shadow-xl m:text-6xl text-left font-semibold mb-2`}
           >
             PACK EVENTOS
           </h1>
-          <h3 className='text-white w-[35vw] font-medium lg:text-3xl md:text-2x1 m:text-xl mb-5 tracking-wide'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          <h3 className='text-white uppercase w-[35vw] font-medium lg:text-3xl md:text-2x1 m:text-xl mb-5 tracking-wide'>
+            Distribuidor gastronómico
           </h3>
 
           <Link
             activeClass='active'
             className='cursor-pointer w-max font-semibold lg:text-lg lg:px-6 lg:py-2 sm:px-5 sm:py-2 m:px-4 m:py-1 m:text-sm text-white bg-primary hover:bg-primaryHover border-lightBlue rounded-lg  transition-all tracking-widest'
-            to='contact'
-            spy={true}
-            smooth={true}
-            offset={-80}
-            duration={500}
+            href='/#contacto'
+            scroll={false}
           >
             CONTACTO
           </Link>
         </div>
-        <div className='absolute bottom-10 flex gap-2 z-10 items-center'>
+        <div className='absolute bottom-10  flex gap-2 z-10 items-center'>
           {slides.map((slide, slideIndex) => (
             <div
               key={slideIndex}

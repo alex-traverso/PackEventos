@@ -15,8 +15,8 @@ const AboutUs = () => {
       <Layout>
         <div className='bg-lightGrey py-topBottom lg:px-sectionSides m:px-sectionSidesMobile'>
           <Titles>NOSOTROS</Titles>
-          <div className='flex justify-center '>
-            <p className='text-white lg:w-[45vw] md:w-[50vw] m:w-[60vw] '>
+          <div className='flex justify-center'>
+            <p className='text-white lg:w-[45vw] md:w-[50vw] m:w-[60vw]'>
               Bienvenido a Pack Eventos, una empresa familiar dedicada a la
               distribución de panchos y hamburguesas congelados para el sector
               gastronómico. Desde hace varios años, hemos estado proporcionando
