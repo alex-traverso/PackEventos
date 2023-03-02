@@ -11,7 +11,7 @@ export default function ProductNoPrice({
 }) {
   return (
     <>
-      <div className=' mm:w-[250px] h-[220px] md:w-xs rounded-md overflow-hidden hover:scale-[1.02] transition duration-500 cursor-pointer bg-darkGrey hover:bg-primaryHover group'>
+      <div className=' mm:w-[250px] h-[230px] flex flex-col justify-start md:w-xs rounded-md overflow-hidden hover:scale-[1.02] transition duration-500 cursor-pointer bg-darkGrey hover:bg-primaryHover group'>
         <Link href={href}>
           <div className='flex justify-center items-start'>
             <Image
