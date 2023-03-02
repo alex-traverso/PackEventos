@@ -4,7 +4,7 @@ import Layout from "@/components/Layout";
 import ProductNoPrice from "@/components/ProductNoPrice";
 
 export default function Hamburgers() {
-  const products = [
+  const hamburgers = [
     {
       title: "Hamburguesas Gigantes",
       src: "/productsHome/burger.png",
@@ -35,7 +35,7 @@ export default function Hamburgers() {
         >
           <Titles>HAMBURGUESAS</Titles>
           <div className='w-full flex flex-wrap gap-8 justify-center items-center'>
-            {products.map((product, id) => (
+            {hamburgers.map((product, id) => (
               <ProductNoPrice
                 key={id}
                 src={product.src}

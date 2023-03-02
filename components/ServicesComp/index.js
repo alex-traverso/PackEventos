@@ -7,19 +7,21 @@ export default function ServicesComp({ id }) {
       src: "/cardsImg/calidad.svg",
       alt: "La mejor calidad",
       title: "La mejor calidad",
-      description: "lorem ipsum dolor sit amet, consectetur adipiscing",
+      description:
+        "Buscamos tener la mejor calidad de productos y servicios para nuestros clientes, brindando la mejor atención",
     },
     {
       src: "/cardsImg/envios.svg",
-      alt: "Envíos sin costo ",
-      title: "Envíos sin costo",
-      description: "lorem ipsum dolor sit amet, consectetur adipiscing",
+      alt: "Envíos sin cargo ",
+      title: "Envíos sin cargo",
+      description: "Envíos refrigerados programados (consultar zona)",
     },
     {
-      src: "/cardsImg/envios.svg",
-      alt: "Envíos sin costo ",
-      title: "Envíos sin costo",
-      description: "lorem ipsum dolor sit amet, consectetur adipiscing",
+      src: "/cardsImg/pago.svg",
+      alt: "Métodos de pago",
+      title: "Métodos de pago",
+      description:
+        "Contamos con formas de pago como: Efectivo, Transferencia bancaria y Mercadopago",
     },
   ];
 
