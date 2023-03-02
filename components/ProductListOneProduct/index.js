@@ -10,10 +10,10 @@ export default function ProductListOneProduct({
 }) {
   return (
     <Layout>
-      <div className='bg-lightGrey w-full py-topBottom m:px-sectionSidesMobile lg:px-sectionSides flex flex-col items-center'>
+      <div className='bg-lightGrey w-full py-topBottom  mm:px-sectionSidesMobile lg:px-sectionSides flex flex-col items-center'>
         <Titles>{title}</Titles>
 
-        <div className='mb-10 w-full h-[120px] flex justify-center m:flex m:flex-wrap m:h-max gap-10'>
+        <div className='mb-10 w-full h-[120px] flex justify-center  mm:flex  mm:flex-wrap  mm:h-max gap-10'>
           {brands.map((brand, id) => (
             <Image
               key={id}
@@ -21,7 +21,7 @@ export default function ProductListOneProduct({
               alt={brand.alt}
               width='100'
               height='100'
-              className='object-contain m:w-[85px] md:w-[100px]'
+              className='object-contain  mm:w-[85px] md:w-[100px]'
             ></Image>
           ))}
         </div>

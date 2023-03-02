@@ -11,7 +11,7 @@ export default function Product({
 }) {
   return (
     <>
-      <div className='m:w-[250px] min-h-[300px] md:w-xs rounded-md overflow-hidden shadow-lg hover:scale-[1.02] transition duration-500 cursor-pointer bg-darkGrey'>
+      <div className=' mm:w-[250px] min-h-[300px] md:w-xs rounded-md overflow-hidden shadow-lg hover:scale-[1.02] transition duration-500 cursor-pointer bg-darkGrey'>
         <div className='flex justify-center items-start'>
           <Image
             src={src}

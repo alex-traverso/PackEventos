@@ -53,7 +53,7 @@ export default function ProductsPage() {
       <Layout>
         <div
           id='productos'
-          className='bg-lightGrey  py-topBottom m:px-sectionSidesMobile lg:px-sectionSides'
+          className='bg-lightGrey  py-topBottom  mm:px-sectionSidesMobile lg:px-sectionSides'
         >
           <Titles>PRODUCTOS</Titles>
           <div className='flex justify-center items-center w-full h-full'>

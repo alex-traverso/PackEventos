@@ -28,12 +28,12 @@ export default function ServicesComp({ id }) {
   return (
     <div
       id={id}
-      className='py-topBottom m:px-sectionSidesMobile lg:px-sectionSides bg-darkGrey'
+      className='py-topBottom  mm:px-sectionSidesMobile lg:px-sectionSides bg-darkGrey'
     >
       <Titles>SERVICIOS</Titles>
       <div
         className='md:flex md:flex-row md:gap-4 md:justify-center md:items-center
-        m:flex m:flex-col m:gap-4 m:justify-center m:items-center
+         mm:flex  mm:flex-col  mm:gap-4  mm:justify-center  mm:items-center
          w-full '
       >
         {info.map((info, id) => (

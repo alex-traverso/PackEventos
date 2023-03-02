@@ -31,7 +31,7 @@ export default function Hamburgers() {
       <Layout>
         <div
           id='productos'
-          className='bg-lightGrey py-topBottom m:px-sectionSidesMobile lg:px-sectionSides'
+          className='bg-lightGrey py-topBottom  mm:px-sectionSidesMobile lg:px-sectionSides'
         >
           <Titles>HAMBURGUESAS</Titles>
           <div className='w-full flex flex-wrap gap-8 justify-center items-center'>

@@ -53,14 +53,14 @@ const NavBar = () => {
           </div>
         </div>
         <ul
-          className={`font-medium m:flex m:flex-col m:items-end md:flex md:flex-row md:items-center md:pb-0 pb-12 m:absolute md:static m:bg-lightGrey md:bg-transparent md:z-auto z-[-1] right-0 w-[60%] m:h-screen md:h-auto md:w-auto md:pl-0 m:pr-10 lg:pr-0  transition-all duration-500 ease-in ${
+          className={`font-medium m mm:flex m mm:flex-col m mm:items-end md:flex md:flex-row md:items-center md:pb-0 pb-12 m mm:absolute md:static m mm:bg-lightGrey md:bg-transparent md:z-auto z-[-1] right-0 w-[60%] m mm:h-screen md:h-auto md:w-auto md:pl-0 m mm:pr-10 lg:pr-0  transition-all duration-500 ease-in ${
             open ? "top-20 " : "top-[-1000px]"
           }`}
         >
           {Links.map((link) => (
             <li
               key={link.name}
-              className='m:mr-0 md:mr-5 lg:last-of-type:mr-0 lg:text-xl md:text-lg w-max md:my-0 mt-8 tracking-wide cursor-pointer'
+              className='m mm:mr-0 md:mr-5 lg:last-of-type:mr-0 lg:text-xl md:text-lg w-max md:my-0 mt-8 tracking-wide cursor-pointer'
             >
               <Link
                 href={link.link}
@@ -71,14 +71,14 @@ const NavBar = () => {
               </Link>
             </li>
           ))}
-          <div className='md:hidden m:flex m:gap-5 mt-10'>
+          <div className='md:hidden m mm:flex m mm:gap-5 mt-10'>
             <a
               className='bg-primary rounded-full p-[6px] hover:bg-primaryHover transition-all'
               target='_blank'
               rel='noreferrer'
               href='https://www.instagram.com/packeventos_/'
             >
-              <Instagram className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px] ' />
+              <Instagram className='m mm:w-[18px] m mm:h-[18px] lg:w-[22px] lg:h-[22px] ' />
             </a>
 
             <a
@@ -87,7 +87,7 @@ const NavBar = () => {
               rel='noreferrer'
               href='https://www.facebook.com/profile.php?id=100063776641832'
             >
-              <Facebook className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px] ' />
+              <Facebook className='m mm:w-[18px] m mm:h-[18px] lg:w-[22px] lg:h-[22px] ' />
             </a>
 
             <a
@@ -96,18 +96,18 @@ const NavBar = () => {
               rel='noreferrer'
               href='https://api.whatsapp.com/message/55V766YAUVVWO1?autoload=1&app_absent=0'
             >
-              <Whatsapp className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px]' />
+              <Whatsapp className='m mm:w-[18px] m mm:h-[18px] lg:w-[22px] lg:h-[22px]' />
             </a>
           </div>
         </ul>
-        <div className='m:hidden md:flex md:gap-5'>
+        <div className='m mm:hidden md:flex md:gap-5'>
           <a
             className='bg-primary rounded-full p-[6px] hover:bg-primaryHover transition-all'
             target='_blank'
             rel='noreferrer'
             href='https://www.instagram.com/packeventos_/'
           >
-            <Instagram className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px]' />
+            <Instagram className='m mm:w-[18px] m mm:h-[18px] lg:w-[22px] lg:h-[22px]' />
           </a>
 
           <a
@@ -116,7 +116,7 @@ const NavBar = () => {
             rel='noreferrer'
             href='https://www.facebook.com/profile.php?id=100063776641832'
           >
-            <Facebook className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px]' />
+            <Facebook className='m mm:w-[18px] m mm:h-[18px] lg:w-[22px] lg:h-[22px]' />
           </a>
 
           <a
@@ -125,7 +125,7 @@ const NavBar = () => {
             rel='noreferrer'
             href='https://api.whatsapp.com/message/55V766YAUVVWO1?autoload=1&app_absent=0'
           >
-            <Whatsapp className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px]' />
+            <Whatsapp className='m mm:w-[18px] m mm:h-[18px] lg:w-[22px] lg:h-[22px]' />
           </a>
         </div>
       </div>

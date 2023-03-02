@@ -50,12 +50,20 @@ export default function BrandCarousell() {
           infinite: true,
         },
       },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
     ],
   };
 
   return (
     <>
-      <Slider className=' w-full h-auto' {...settings}>
+      <Slider className='w-full h-auto' {...settings}>
         {brandsHome.map((image, id) => (
           <ImageToComps
             key={id}

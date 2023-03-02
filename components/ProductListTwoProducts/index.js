@@ -12,12 +12,12 @@ export default function ProductListTwoProducts({
 }) {
   return (
     <Layout>
-      <div className='bg-lightGrey w-full py-topBottom m:px-sectionSidesMobile lg:px-sectionSides'>
+      <div className='bg-lightGrey w-full py-topBottom  mm:px-sectionSidesMobile lg:px-sectionSides'>
         {/* PRODUCTO COMPLETO, CON PAN POR EJEMPLO */}
         <Titles>{firstTitle}</Titles>
         <div
-          className='mb-10 w-full h-[120px] flex justify-center m:flex
-          m:flex-wrap m:h-max gap-10'
+          className='mb-10 w-full h-[120px] flex justify-center  mm:flex
+           mm:flex-wrap  mm:h-max gap-10'
         >
           {brands.map((brand, id) => (
             <Image
@@ -49,8 +49,8 @@ export default function ProductListTwoProducts({
           </div>
           {/* PRODUCTO SOLO, SIN PAN POR EJEMPLO */}
           <div
-            className='mb-10 w-full h-[120px] flex justify-center m:flex
-          m:flex-wrap m:h-max gap-10'
+            className='mb-10 w-full h-[120px] flex justify-center  mm:flex
+           mm:flex-wrap  mm:h-max gap-10'
           >
             {brands.map((brand, id) => (
               <Image
@@ -83,7 +83,7 @@ export default function ProductListTwoProducts({
 
 {
   /* <Layout>
-  <div className='bg-lightGrey w-full py-topBottom m:px-sectionSidesMobile lg:px-sectionSides'>
+  <div className='bg-lightGrey w-full py-topBottom  mm:px-sectionSidesMobile lg:px-sectionSides'>
     <Titles>{title}</Titles>
     <div className='mb-10 w-full h-[120px] flex justify-center gap-10'>
       <div className='mb-10 w-full h-[120px] flex justify-center gap-10'>

@@ -48,29 +48,29 @@ export default function Banner() {
       <div className='relative w-full h-[calc(100vh-5rem)] flex flex-col items-center justify-start overflow-hidden'>
         <div
           style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-          className='absolute z-10 flex flex-col justify-center items-start duration-500 bg-cover bg-center lg:px-sectionSides m:px-sectionSidesMobile w-full h-full bg-opacity-[0.3]'
+          className='absolute z-10 flex flex-col justify-center items-start duration-500 bg-cover bg-center lg:px-sectionSides mm:px-sectionSidesMobile w-full h-full bg-opacity-[0.3]'
         >
           {/* Left Arrow */}
-          <div className='m:hidden md:flex justify-center p-2 h-12 w-12 bg-black/50 hover:bg-black transition-all rounded-full absolute top-[50%] -translate-x-0 translate-y-[-50%] left-12 cursor-pointer'>
+          <div className='mm:hidden md:flex justify-center p-2 h-12 w-12 bg-black/50 hover:bg-black transition-all rounded-full absolute top-[50%] -translate-x-0 translate-y-[-50%] left-12 cursor-pointer'>
             <LeftArrow onClick={prevSlide} width='20px' fill='#F2AD25' />
           </div>
           {/* Right Arrow */}
-          <div className='m:hidden md:flex justify-center p-2 h-12 w-12 bg-black/50 hover:bg-black transition-all rounded-full absolute top-[50%] -translate-x-0 translate-y-[-50%] right-12 cursor-pointer'>
+          <div className='mm:hidden md:flex justify-center p-2 h-12 w-12 bg-black/50 hover:bg-black transition-all rounded-full absolute top-[50%] -translate-x-0 translate-y-[-50%] right-12 cursor-pointer'>
             <RightArrow onClick={nextSlide} width='20px' fill='#F2AD25' />
           </div>
           {/* Slides */}
           <h1
-            className={`${archivoBlack.className} text-white md:text-7xl drop-shadow-xl m:text-6xl text-left font-semibold mb-2`}
+            className={`${archivoBlack.className} text-white md:text-7xl drop-shadow-xl mm:text-5xl m:text-6xl text-left font-semibold mb-2`}
           >
             PACK EVENTOS
           </h1>
-          <h3 className='text-white uppercase w-[35vw] font-medium lg:text-3xl md:text-2x1 m:text-xl mb-5 tracking-wide'>
+          <h3 className='text-white uppercase w-[35vw] font-medium lg:text-3xl md:text-2x1 mm:text-xl mb-5 tracking-wide'>
             Distribuidor gastronómico
           </h3>
 
           <Link
             activeClass='active'
-            className='cursor-pointer w-max font-semibold lg:text-lg lg:px-6 lg:py-2 sm:px-5 sm:py-2 m:px-4 m:py-1 m:text-sm text-white bg-primary hover:bg-primaryHover border-lightBlue rounded-lg  transition-all tracking-widest'
+            className='cursor-pointer w-max font-semibold lg:text-lg lg:px-6 lg:py-2 sm:px-5 sm:py-2 mm:px-4 mm:py-1 mm:text-sm text-white bg-primary hover:bg-primaryHover border-lightBlue rounded-lg  transition-all tracking-widest'
             href='/#contacto'
             scroll={false}
           >
