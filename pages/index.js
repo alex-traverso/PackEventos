@@ -37,7 +37,7 @@ export default function Home() {
             <ProductsHomeSection />
             <Phrase />
             <Brands />
-            <ServicesComp />
+            <ServicesComp id='servicios' />
             <Contact id='contacto' />
           </Layout>
         </div>

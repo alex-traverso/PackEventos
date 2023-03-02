@@ -2,7 +2,12 @@ import Head from "next/head";
 import Layout from "@/components/Layout";
 import Titles from "@/components/Titles";
 import Product from "@/components/Product";
-import { hotDogDataWithBread, hotDogData } from "@/productsData/hotDogsData";
+import Image from "next/image";
+import {
+  hotDogDataWithBread,
+  hotDogData,
+  hotDogsBrands,
+} from "@/productsData/hotDogsData";
 
 export default function HotDog() {
   return (
@@ -15,8 +20,20 @@ export default function HotDog() {
       </Head>
       <Layout>
         <div className='bg-lightGrey py-topBottom m:px-sectionSidesMobile lg:px-sectionSides'>
-          <Titles>PANCHOS</Titles>
-          <div className='flex flex-wrap gap-4 justify-center items-center w-full h-auto'>
+          <Titles>SUPER PANCHOS</Titles>
+          <div className='mb-10 w-full h-[120px] flex justify-center gap-10'>
+            {hotDogsBrands.map((brand, id) => (
+              <Image
+                key={id}
+                src={brand.src}
+                alt={brand.alt}
+                width='100'
+                height='100'
+                className='object-contain'
+              ></Image>
+            ))}
+          </div>
+          <div className='flex flex-wrap gap-4 justify-center items-start w-full h-auto'>
             {/* CON PAN */}
             {hotDogDataWithBread.map((hotDog, id) => (
               <Product
@@ -31,9 +48,21 @@ export default function HotDog() {
               />
             ))}
             <div className='mt-[2rem] w-full'>
-              <Titles>SALCHICHAS SIN PAN</Titles>
+              <Titles>SALCHICHAS LARGAS SIN PAN</Titles>
             </div>
             {/* SIN PAN */}
+            <div className='mb-10 w-full h-[120px] flex justify-center gap-10'>
+              {hotDogsBrands.map((brand, id) => (
+                <Image
+                  key={id}
+                  src={brand.src}
+                  alt={brand.alt}
+                  width='100'
+                  height='100'
+                  className='object-contain'
+                ></Image>
+              ))}
+            </div>
             {hotDogData.map((hotDog, id) => (
               <Product
                 key={id}

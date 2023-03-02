@@ -72,63 +72,61 @@ const NavBar = () => {
             </li>
           ))}
           <div className='md:hidden m:flex m:gap-5 mt-10'>
-            <div className='bg-primary rounded-full p-[6px] hover:bg-primaryHover transition-all'>
-              <a
-                target='_blank'
-                rel='noreferrer'
-                href='https://www.instagram.com/packeventos_/'
-              >
-                <Instagram className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px] ' />
-              </a>
-            </div>
-            <div className='bg-primary rounded-full p-[6px] hover:bg-primaryHover transition-all'>
-              <a
-                target='_blank'
-                rel='noreferrer'
-                href='https://www.facebook.com/profile.php?id=100063776641832'
-              >
-                <Facebook className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px] ' />
-              </a>
-            </div>
-            <div className='bg-primary rounded-full p-[6px] hover:bg-primaryHover transition-all'>
-              <a
-                target='_blank'
-                rel='noreferrer'
-                href='https://www.google.com.ar'
-              >
-                <Whatsapp className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px]' />
-              </a>
-            </div>
-          </div>
-        </ul>
-        <div className='m:hidden md:flex md:gap-5'>
-          <div className='bg-primary rounded-full p-[6px] hover:bg-primaryHover transition-all'>
             <a
+              className='bg-primary rounded-full p-[6px] hover:bg-primaryHover transition-all'
               target='_blank'
               rel='noreferrer'
               href='https://www.instagram.com/packeventos_/'
             >
-              <Instagram className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px]' />
+              <Instagram className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px] ' />
             </a>
-          </div>
-          <div className='bg-primary rounded-full p-[6px] hover:bg-primaryHover transition-all'>
+
             <a
+              className='bg-primary rounded-full p-[6px] hover:bg-primaryHover transition-all'
               target='_blank'
               rel='noreferrer'
               href='https://www.facebook.com/profile.php?id=100063776641832'
             >
-              <Facebook className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px]' />
+              <Facebook className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px] ' />
             </a>
-          </div>
-          <div className='bg-primary rounded-full p-[6px] hover:bg-primaryHover transition-all'>
+
             <a
+              className='bg-primary rounded-full p-[6px] hover:bg-primaryHover transition-all'
               target='_blank'
               rel='noreferrer'
-              href='https://www.google.com.ar'
+              href='https://api.whatsapp.com/message/55V766YAUVVWO1?autoload=1&app_absent=0'
             >
-              <Whatsapp className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px] ' />
+              <Whatsapp className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px]' />
             </a>
           </div>
+        </ul>
+        <div className='m:hidden md:flex md:gap-5'>
+          <a
+            className='bg-primary rounded-full p-[6px] hover:bg-primaryHover transition-all'
+            target='_blank'
+            rel='noreferrer'
+            href='https://www.instagram.com/packeventos_/'
+          >
+            <Instagram className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px]' />
+          </a>
+
+          <a
+            className='bg-primary rounded-full p-[6px] hover:bg-primaryHover transition-all'
+            target='_blank'
+            rel='noreferrer'
+            href='https://www.facebook.com/profile.php?id=100063776641832'
+          >
+            <Facebook className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px]' />
+          </a>
+
+          <a
+            className='bg-primary rounded-full p-[6px] hover:bg-primaryHover transition-all'
+            target='_blank'
+            rel='noreferrer'
+            href='https://api.whatsapp.com/message/55V766YAUVVWO1?autoload=1&app_absent=0'
+          >
+            <Whatsapp className='m:w-[18px] m:h-[18px] lg:w-[22px] lg:h-[22px]' />
+          </a>
         </div>
       </div>
     </div>

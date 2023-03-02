@@ -30,7 +30,7 @@ export default function Cheese() {
             ))}
           </div>
 
-          <div className='flex flex-wrap gap-4 justify-start items-center w-full h-auto'>
+          <div className='flex flex-wrap gap-4 justify-center items-start w-full h-auto'>
             {/* QUESOS */}
             {cheeseData.map((cheese, id) => (
               <Product

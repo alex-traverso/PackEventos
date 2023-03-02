@@ -18,7 +18,7 @@ export const dressingDataKnob = [
     height: "100",
   },
   {
-    src: "/products/aderezos/ketchup.png",
+    src: "/products/aderezos/salsa-golf.png",
     alt: "Salsa Golf",
     title: "Salsa Golf",
     description: "BENIDORM",
@@ -27,7 +27,7 @@ export const dressingDataKnob = [
     height: "100",
   },
   {
-    src: "/products/aderezos/salsa-golf.png",
+    src: "/products/aderezos/ketchup.png",
     alt: "Ketchup",
     title: "Ketchup",
     description: "BENIDORM",
@@ -127,5 +127,12 @@ export const dressingDataSachet = [
     price: "$1500",
     width: "100",
     height: "100",
+  },
+];
+
+export const dressingBrands = [
+  {
+    src: "/brands/benidorm.png",
+    alt: "Benidorm",
   },
 ];

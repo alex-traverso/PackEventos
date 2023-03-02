@@ -3,7 +3,6 @@ import React, { useState, useRef } from "react";
 import { validateForm } from "@/validate/validateForm";
 import useValidation from "@/hooks/useValidation";
 import Button from "../Button";
-import emailjs from "@emailjs/browser";
 import Check from "../Icons/Check/index";
 
 export default function Contact({ id }) {
@@ -13,41 +12,24 @@ export default function Contact({ id }) {
     message: "",
   };
 
-  const [error, setError] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
-
   // Funcion que se ejecuta cuando el usuario hace submit
-  const sendEmail = () => {
-    emailjs
-      .sendForm(
-        "service_vgs55vd",
-        "template_y7yjl75",
-        form.current,
-        "NUH1ZdYHL0tqg9HZl"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setIsOpen(true);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+  const openModal = () => {
+    setModal(true);
   };
 
-  console.log(error);
-
-  const { values, errors, handleChange, handleSubmit, handleBlur } =
-    useValidation(INITIAL_STATE, validateForm, sendEmail);
+  const { values, errors, isOpen, handleChange, handleSubmit, handleBlur } =
+    useValidation(INITIAL_STATE, validateForm, openModal);
 
   const { name, email, message } = values;
-  console.log(values);
-  const form = useRef();
+  const [modal, setModal] = useState(isOpen);
 
-  const isButtonDisabled = name === "" || email === "" || message === "";
+  const isButtonDisabled =
+    Object.keys(errors).length > 0 ||
+    name === "" ||
+    email === "" ||
+    message === "" ||
+    message.length < 5;
 
-  //AGREGAR UN MODAL O ALGO QUE LE INDIQUE AL USUARIO QUE SE ENVIO EL MENSAJE
   return (
     <div
       id={id}
@@ -55,15 +37,15 @@ export default function Contact({ id }) {
     >
       <Titles>CONTACTO</Titles>
       <section>
-        {isOpen ? (
+        {modal ? (
           <section className='bg-black/50 min-h-full w-full z-50 top-0 left-0 flex justify-center items-center fixed '>
             <div className='bg-darkGrey duration-400 text-white relative flex md:min-h-[350px] w-[500px] flex-col justify-center items-center gap-4 rounded-xl border border-lightGrey p-6 shadow-inner border-zinc-700/shadow-zinc-700/40 '>
               <h2 className='text-2xl'>El mensaje se envió con exito</h2>
               <Check width={70} height={70} className='stroke-primary' />
-              {isOpen ? (
+              {modal ? (
                 <Button
                   onClick={() => {
-                    setIsOpen(false);
+                    setModal(false);
                   }}
                 >
                   CERRAR
@@ -72,21 +54,10 @@ export default function Contact({ id }) {
             </div>
           </section>
         ) : null}
-
-        <button
-          className='text-white'
-          onClick={() => {
-            setIsOpen(!isOpen);
-          }}
-        >
-          X
-        </button>
       </section>
       <form
-        ref={form}
         onSubmit={handleSubmit}
-        action=''
-        className=' flex flex-col justify-center items-start lg:w-[45%] sm:w-[60%] m:w-[80%] gap-3 text-white'
+        className='flex flex-col justify-center items-start lg:w-[45%] sm:w-[60%] m:w-[80%] gap-3 text-white'
       >
         <input
           required

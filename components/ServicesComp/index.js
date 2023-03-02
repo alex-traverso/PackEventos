@@ -1,7 +1,7 @@
 import Card from "../Card";
 import Titles from "../Titles";
 
-export default function ServicesComp() {
+export default function ServicesComp({ id }) {
   const info = [
     {
       src: "/cardsImg/calidad.svg",
@@ -25,7 +25,7 @@ export default function ServicesComp() {
 
   return (
     <div
-      id='servicios'
+      id={id}
       className='py-topBottom m:px-sectionSidesMobile lg:px-sectionSides bg-darkGrey'
     >
       <Titles>SERVICIOS</Titles>

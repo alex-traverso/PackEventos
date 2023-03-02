@@ -33,12 +33,12 @@ export default function ProductsPage() {
     {
       title: "Rebozados",
       src: "/productsHome/nuggets.png",
-      href: "/productos/quesos",
+      href: "/productos/rebozados",
     },
     {
       title: "Papas congeladas",
       src: "/productsHome/papas-congeladas.png",
-      href: "/productos/quesos",
+      href: "/productos/congelados",
     },
   ];
 

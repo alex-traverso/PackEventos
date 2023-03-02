@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import Titles from "@/components/Titles";
 import Image from "next/image";
 import Product from "@/components/Product";
-import { cheeseData, cheeseBrands } from "@/productsData/cheeseData";
+import { breadedData, breadedBrands } from "@/productsData/breadedData";
 
 export default function Breaded() {
   return (
@@ -21,7 +21,7 @@ export default function Breaded() {
         <div className='bg-lightGrey w-full py-topBottom m:px-sectionSidesMobile lg:px-sectionSides'>
           <Titles>REBOZADOS</Titles>
           <div className='mb-10 w-full h-[120px] flex justify-center gap-10'>
-            {cheeseBrands.map((brand, id) => (
+            {breadedBrands.map((brand, id) => (
               <Image
                 key={id}
                 src={brand.src}
@@ -33,18 +33,18 @@ export default function Breaded() {
             ))}
           </div>
 
-          <div className='flex flex-wrap gap-4 justify-start items-center w-full h-auto'>
+          <div className='flex flex-wrap gap-4 justify-center items-start w-full h-auto'>
             {/* QUESOS */}
-            {cheeseData.map((cheese, id) => (
+            {breadedData.map((breaded, id) => (
               <Product
                 key={id}
-                src={cheese.src}
-                alt={cheese.alt}
-                title={cheese.title}
-                description={cheese.description}
-                price={cheese.price}
-                width={cheese.width}
-                height={cheese.height}
+                src={breaded.src}
+                alt={breaded.alt}
+                title={breaded.title}
+                description={breaded.description}
+                price={breaded.price}
+                width={breaded.width}
+                height={breaded.height}
               />
             ))}
           </div>

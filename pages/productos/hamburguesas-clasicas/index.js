@@ -25,20 +25,19 @@ export default function ClassicBurgers() {
         <div className='bg-lightGrey w-full py-topBottom m:px-sectionSidesMobile lg:px-sectionSides'>
           <Titles>HAMBURGUESAS CLÁSICAS CON PAN</Titles>
           <div className='mb-10 w-full h-[120px] flex justify-center gap-10'>
-            <div className='mb-10 w-full h-[120px] flex justify-center gap-10'>
-              {hamburgerBrands.map((brand, id) => (
-                <Image
-                  key={id}
-                  src={brand.src}
-                  alt={brand.alt}
-                  width='100'
-                  height='100'
-                  className='object-contain'
-                ></Image>
-              ))}
-            </div>
+            {hamburgerBrands.map((brand, id) => (
+              <Image
+                key={id}
+                src={brand.src}
+                alt={brand.alt}
+                width='100'
+                height='100'
+                className='object-contain'
+              ></Image>
+            ))}
           </div>
-          <div className='flex flex-wrap gap-4 justify-start items-center w-full h-auto'>
+
+          <div className='flex flex-wrap gap-4 justify-center items-start w-full h-auto'>
             {classicHamburguersDataWithBread.map((hamburger, id) => (
               <Product
                 key={id}
