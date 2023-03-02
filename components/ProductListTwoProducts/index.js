@@ -15,7 +15,10 @@ export default function ProductListTwoProducts({
       <div className='bg-lightGrey w-full py-topBottom m:px-sectionSidesMobile lg:px-sectionSides'>
         {/* PRODUCTO COMPLETO, CON PAN POR EJEMPLO */}
         <Titles>{firstTitle}</Titles>
-        <div className='mb-10 w-full h-[120px] flex justify-center gap-10'>
+        <div
+          className='mb-10 w-full h-[120px] flex justify-center m:flex
+          m:flex-wrap m:h-max gap-10'
+        >
           {brands.map((brand, id) => (
             <Image
               key={id}
@@ -45,7 +48,10 @@ export default function ProductListTwoProducts({
             <Titles>{secondTitle}</Titles>
           </div>
           {/* PRODUCTO SOLO, SIN PAN POR EJEMPLO */}
-          <div className='mb-10 w-full h-[120px] flex justify-center gap-10'>
+          <div
+            className='mb-10 w-full h-[120px] flex justify-center m:flex
+          m:flex-wrap m:h-max gap-10'
+          >
             {brands.map((brand, id) => (
               <Image
                 key={id}

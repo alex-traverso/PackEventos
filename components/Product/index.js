@@ -16,13 +16,13 @@ export default function Product({
           <Image
             src={src}
             alt={alt}
-            className='h-[100px] w-auto object-contain m-5'
+            className='h-[100px] w-[120px] object-contain m-5'
             width={width}
             height={height}
           />
         </div>
-        <div className='py-4 px-4 '>
-          <h3 className='text-lg font-semibold text-primary'>{title}</h3>
+        <div className='py-4 px-4'>
+          <h3 className='text-xl font-semibold text-primary'>{title}</h3>
           <p className='text-white'>{description}</p>
 
           <div className='px-4 py-1 mt-4 rounded-lg bg-green-700 w-max'>

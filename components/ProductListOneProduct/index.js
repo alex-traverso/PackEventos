@@ -10,22 +10,22 @@ export default function ProductListOneProduct({
 }) {
   return (
     <Layout>
-      <div className='bg-lightGrey w-full py-topBottom m:px-sectionSidesMobile lg:px-sectionSides'>
+      <div className='bg-lightGrey w-full py-topBottom m:px-sectionSidesMobile lg:px-sectionSides flex flex-col items-center'>
         <Titles>{title}</Titles>
-        <div className='mb-10 w-full h-[120px] flex justify-center gap-10'>
-          <div className='mb-10 w-full h-[120px] flex justify-center gap-10'>
-            {brands.map((brand, id) => (
-              <Image
-                key={id}
-                src={brand.src}
-                alt={brand.alt}
-                width='100'
-                height='100'
-                className='object-contain'
-              ></Image>
-            ))}
-          </div>
+
+        <div className='mb-10 w-full h-[120px] flex justify-center m:flex m:flex-wrap m:h-max gap-10'>
+          {brands.map((brand, id) => (
+            <Image
+              key={id}
+              src={brand.src}
+              alt={brand.alt}
+              width='100'
+              height='100'
+              className='object-contain m:w-[85px] md:w-[100px]'
+            ></Image>
+          ))}
         </div>
+
         <div className='flex flex-wrap gap-4 justify-center items-start w-full h-auto'>
           {productFullData.map((product, id) => (
             <Product
