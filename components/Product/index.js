@@ -22,7 +22,7 @@ export default function Product({
           />
         </div>
         <div className='py-4 px-4'>
-          <h3 className='text-xl font-semibold text-primary'>{title}</h3>
+          <h3 className='text-xl mb-2 font-semibold text-primary'>{title}</h3>
           <p className='text-white'>{description}</p>
 
           <div className='px-4 py-1 mt-4 rounded-lg bg-green-700 w-max'>

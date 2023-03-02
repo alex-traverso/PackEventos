@@ -2,7 +2,7 @@ import Titles from "../Titles";
 import ImageToComps from "../ImageToComps";
 import Link from "next/link";
 
-import dressing from "public/products/aderezos/mayonesa.png";
+import dressing from "public/productsHome/dressing.png";
 import burger from "public/productsHome/burger.png";
 import hotDog from "public/productsHome/hot dog.png";
 import sardoCheese from "public/productsHome/queso.png";

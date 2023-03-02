@@ -1,8 +1,8 @@
 export const gigantHamburguersDataWithBread = [
   {
     src: "/productsHome/burger.png",
-    alt: "40 hamburguesas con pan",
-    title: "40 hamburguesas con pan",
+    alt: "40 medallones de carne con pan",
+    title: "40 medallones de carne con pan",
     brandsrc: "/brands/la-defensa.png",
     description: "LA DEFENSA 30 % Soja x 110 Grs",
     price: "$3.900",
@@ -11,8 +11,8 @@ export const gigantHamburguersDataWithBread = [
   },
   {
     src: "/productsHome/burger.png",
-    alt: "20 hamburguesas con pan",
-    title: "20 hamburguesas con pan",
+    alt: "20 medallones de carne con pan",
+    title: "20 medallones de carne con pan",
     brandsrc: "/brands/la-defensa.png",
     description: "LA DEFENSA 30 % Soja x 110 Grs",
     price: "$2.300",
@@ -89,9 +89,9 @@ export const gigantHamburguersDataWithBread = [
 export const gigantHamburguersData = [
   {
     src: "/productsHome/burger.png",
-    alt: "40 hamburguesas sin pan",
     brandsrc: "/brands/la-defensa.png",
-    title: "40 hamburguesas sin pan",
+    alt: "40 medallones de carne sin pan",
+    title: "40 medallones de carne sin pan",
     description: "LA DEFENSA 30 % Soja x 110 Grs",
     price: "$2.590",
     width: "100",
@@ -99,9 +99,9 @@ export const gigantHamburguersData = [
   },
   {
     src: "/productsHome/burger.png",
-    alt: "20 hamburguesas sin pan",
     brandsrc: "/brands/la-defensa.png",
-    title: "20 hamburguesas sin pan",
+    alt: "20 medallones de carne sin pan",
+    title: "20 medallones de carne sin pan",
     description: "LA DEFENSA 30 % Soja x 110 Grs",
     price: "$1.450",
     width: "100",

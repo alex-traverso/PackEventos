@@ -8,13 +8,23 @@ import { archivoBlack } from "@/pages";
 export default function Banner() {
   const slides = [
     {
-      url: "/banner/banner.png",
+      url: "/banner/banner-hamburger-1.png",
     },
     {
-      url: "/banner/banner2.png",
+      url: "/banner/banner-hot-dog.jpg",
     },
     {
-      url: "/banner/banner3.png",
+      url: "/banner/banner-hamburger-2.png",
+    },
+    {
+      url: "/banner/banner-hamburger-3.png",
+    },
+    {
+      url: "/banner/banner-nuggets.jpg",
+    },
+
+    {
+      url: "/banner/banner-potatoes.jpg",
     },
   ];
 

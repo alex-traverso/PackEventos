@@ -1,8 +1,8 @@
 export const classicHamburguersDataWithBread = [
   {
     src: "/productsHome/burger.png",
-    alt: "60 hamburguesas con pan",
-    title: "60 hamburguesas con pan",
+    alt: "60 medallones de carne con pan",
+    title: "60 medallones de carne con pan",
     brandsrc: "/brands/la-defensa.png",
     description: "LA CONQUISTA 30 % Soja x 69 Grs",
     price: "$4.900",
@@ -11,8 +11,8 @@ export const classicHamburguersDataWithBread = [
   },
   {
     src: "/productsHome/burger.png",
-    alt: "36 hamburguesas con pan",
-    title: "36 hamburguesas con pan",
+    alt: "36 medallones de carne con pan",
+    title: "36 medallones de carne con pan",
     brandsrc: "/brands/la-defensa.png",
     description: "LA CONQUISTA 30 % Soja x 69 Grs",
     price: "$3.300",
@@ -84,8 +84,8 @@ export const classicHamburguersDataWithBread = [
 export const classicHamburguersDataNoBread = [
   {
     src: "/productsHome/burger.png",
-    alt: "60 hamburguesas sin pan",
-    title: "60 hamburguesas sin pan",
+    alt: "60 medallones de carne sin pan",
+    title: "60 medallones de carne sin pan",
     brandsrc: "/brands/la-defensa.png",
     description: "LA CONQUISTA 30 % Soja x 69 Grs",
     price: "$3.100",
@@ -94,8 +94,8 @@ export const classicHamburguersDataNoBread = [
   },
   {
     src: "/productsHome/burger.png",
-    alt: "30 hamburguesas sin pan",
-    title: "30 hamburguesas sin pan",
+    alt: "30 medallones de carne sin pan",
+    title: "30 medallones de carne sin pan",
     brandsrc: "/brands/la-defensa.png",
     description: "LA CONQUISTA 30 % Soja x 69 Grs",
     price: "$1.700",
