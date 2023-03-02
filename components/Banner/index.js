@@ -95,11 +95,10 @@ export default function Banner() {
               className='text-2xl cursor-pointer'
             >
               <SlideIcon
-                height={8}
-                className={` ${
+                className={`mm:h-[5px] md:h-[8px] lg:h-[10px] ${
                   currentIndex === slideIndex
                     ? "fill-primary"
-                    : "fill-[#9e9e9e]"
+                    : "fill-[#737373]"
                 } hover:fill-primary`}
               />
             </div>
