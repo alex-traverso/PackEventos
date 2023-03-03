@@ -13,6 +13,7 @@ export default function Cheese() {
       </Head>
       <ProductListOneProduct
         title='QUESOS'
+        subtitle='Los precios son x Kg horma entera'
         productFullData={cheeseData}
         brands={cheeseBrands}
       />

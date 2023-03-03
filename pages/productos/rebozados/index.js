@@ -15,7 +15,7 @@ export default function Breaded() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <ProductListOneProduct
-        title='REBOZADOS'
+        title='REBOZADOS CONGELADOS'
         productFullData={breadedData}
         brands={breadedBrands}
       />

@@ -5,6 +5,7 @@ import Product from "../Product";
 
 export default function ProductListOneProduct({
   title,
+  subtitle,
   brands,
   productFullData,
 }) {
@@ -12,8 +13,8 @@ export default function ProductListOneProduct({
     <Layout>
       <div className='bg-lightGrey w-full py-topBottom  mm:px-sectionSidesMobile lg:px-sectionSides flex flex-col items-center'>
         <Titles>{title}</Titles>
-
-        <div className='mb-10 w-full h-[120px] flex justify-center  mm:flex  mm:flex-wrap  mm:h-max gap-10'>
+        <h3 className='text-white font-medium text-xl mb-6'>{subtitle}</h3>
+        <div className='mb-10 w-full h-[120px] flex justify-center mm:flex mm:flex-wrap  mm:h-max gap-10'>
           {brands.map((brand, id) => (
             <Image
               key={id}

@@ -8,7 +8,7 @@ const SVGComponent = (props) => (
     xmlns='http://www.w3.org/2000/svg'
     {...props}
   >
-    <rect width={109} height={18} rx={9} fill={props} />
+    <rect width={90} height={18} rx={9} fill={props} />
   </svg>
 );
 export default SVGComponent;

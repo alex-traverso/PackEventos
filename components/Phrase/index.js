@@ -1,5 +1,4 @@
-import Image from "next/image";
-import phraseBg from "public/bg-frase.png";
+import { Parallax } from "react-parallax";
 
 export default function Phrase() {
   return (
@@ -16,9 +15,20 @@ export default function Phrase() {
           &quot;No existe mejor publicidad que un cliente satisfecho.&quot;
         </h2>
       </div>
-      <div className='absolute w-full h-full top-0 left-0'>
-        <Image src={phraseBg} className='w-full h-full object-cover'></Image>
-      </div>
+
+      <Parallax
+        className='min-w-full min-h-full bg-center'
+        blur={1}
+        bgImage='/bg-frase-2.png'
+        bgImageStyle={{
+          opacity: ".8",
+          objectFit: "cover",
+          height: "100vh",
+          hidth: "100vw",
+        }}
+        bgImageAlt='Bienvenido a Pack Eventos'
+        strength={300}
+      ></Parallax>
     </div>
   );
 }
