@@ -26,6 +26,11 @@ export default function ProductsPage() {
       href: "/productos/aderezos",
     },
     {
+      title: "Snacks",
+      src: "/productsHome/papas-pay.png",
+      href: "/productos/snacks",
+    },
+    {
       title: "Quesos",
       src: "/productsHome/queso.png",
       href: "/productos/quesos",

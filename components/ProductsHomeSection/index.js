@@ -5,6 +5,7 @@ import Link from "next/link";
 import dressing from "public/productsHome/dressing.png";
 import burger from "public/productsHome/burger.png";
 import hotDog from "public/productsHome/hot dog.png";
+import snacks from "public/productsHome/papas-pay.png";
 import sardoCheese from "public/productsHome/queso.png";
 import nuggets from "public/productsHome/nuggets.png";
 import potatoes from "public/productsHome/papas-congeladas.png";
@@ -22,6 +23,10 @@ export default function ProductsHomeSection() {
     {
       name: dressing,
       url: "/productos/aderezos",
+    },
+    {
+      name: snacks,
+      url: "/productos/snacks",
     },
     {
       name: sardoCheese,
