@@ -3,6 +3,7 @@ export const snacksData = [
     src: "/products/snacks/papas-pay.png",
     alt: "Papas Pay",
     title: "Papas Pay",
+    brandsrc: "/brands/sol-de-junio.jpg",
     description: "SOL DE JUNIO x 500 Grs",
     price: "$750",
     width: "100",

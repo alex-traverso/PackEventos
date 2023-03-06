@@ -26,7 +26,7 @@ export default function ProductListTwoProducts({
               alt={brand.alt}
               width={100}
               height={100}
-              className='object-contain w-auto h-auto'
+              className='object-contain mm:h-[50px] md:h-[60px]'
             ></Image>
           ))}
         </div>
@@ -38,6 +38,7 @@ export default function ProductListTwoProducts({
               src={product.src}
               alt={product.alt}
               title={product.title}
+              brandsrc={product.brandsrc}
               description={product.description}
               price={product.price}
               width={product.width}
@@ -69,6 +70,7 @@ export default function ProductListTwoProducts({
               src={product.src}
               alt={product.alt}
               title={product.title}
+              brandsrc={product.brandsrc}
               description={product.description}
               price={product.price}
               width={product.width}
